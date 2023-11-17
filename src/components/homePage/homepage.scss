@@ -1,0 +1,104 @@
+@import "../../app.scss";
+
+.homePage{
+    height: calc(100vh - 100px);
+    overflow: hidden;
+    background: linear-gradient(180deg ,rgb(0, 0, 0) , rgb(125, 124, 123));
+    position: relative;
+
+    .wrapper{
+     max-width: 1366px;
+     height: 100%;
+     margin: auto;
+
+        .textContainer{
+            width: 50%;
+            height: 100%;
+            display: flex;
+            position: absolute;
+            flex-direction: column;
+            justify-content: center;
+            gap: 40px;
+
+            @include mobile{
+                height: 50%;
+                width: 100%;
+                gap: 20px;
+                align-items: center;
+                text-align: center;
+            }
+
+            h2{
+             font-size: 30px;
+             color: #fdfdfd;
+             letter-spacing: 10px;
+            }
+
+            h1{
+             font-size: 88px;
+
+             @include mobile{
+                font-size: 36px;
+                width: 100%;
+            }
+            }
+
+            .buttons{
+                button{
+              padding: 20px;
+              border: 1px solid #bdbbbb;
+              border-radius: 10px;
+              background-color: transparent;
+              color: #f7f7f7;
+              margin-right: 20px;
+              font-weight: bolder;
+              cursor: not-allowed;
+              }
+            }
+            img{
+                width: 40px;
+
+               
+            }
+        }
+    }
+
+    .imageContainer{
+        height: 100%;
+        width: 50%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        
+         @include mobile{
+                height: 50%;
+                width: 100%;
+                top: unset;
+                bottom: 0;
+                object-fit: cover;
+                
+            }
+
+        img{
+            height: 600px;
+            width: 100%;
+
+            @include mobile{
+                height: 300px;
+                
+            }
+        }
+
+        
+    }
+
+    .slidingTextContainer{
+        position: absolute;
+        font-size: 50vh;
+        bottom: -120px;
+        white-space: nowrap;
+        color: rgba(222, 210, 204, 0.491);
+        width: 50%;
+        font-weight: bold;
+    }
+}
