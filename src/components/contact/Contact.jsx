@@ -45,7 +45,7 @@ export default function Contact() {
 
 
   return (
-    <div className="contact" variants={variants} initial="initial" whileInView="animate">
+    <div className="contact" variants={variants} initial="initial" whileinview="animate">
       <motion.div className="textContainer" variants={variants}>
         <motion.h1 variants={variants}>Contact</motion.h1>
         <motion.div className="item" variants={variants}>

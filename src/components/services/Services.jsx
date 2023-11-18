@@ -26,7 +26,7 @@ const Services = () => {
       variants={variants}
       initial="initial"
       // animate="animate"
-      whileInView="animate"
+      whileinview="animate"
     >
       <div className="textContainer" variants={variants}>
         <p>
